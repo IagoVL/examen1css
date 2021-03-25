@@ -4,91 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quien es Iago?</title>
-    <link rel="stylesheet" href="style.scss">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="script.js"></script>
-    <div class="skw-pages">
-        <div class="skw-page skw-page-1 active">
-          <div class="skw-page__half skw-page__half--left">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content"></div>
-            </div>
-          </div>
-          <div class="skw-page__half skw-page__half--right">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content">
-                <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
-                <p class="skw-page__description">Just scroll down</p>
-              </div>
-            </div>
-          </div>
+    <header>
+        <div id="nav">
+          <ul>
+            <li><a href="#welcome" class="scroller" data-offset="-140">Quien soy?</a></li>
+            <li><a href="#portfolio" class="scroller" data-offset="-139">Portfolio</a></li>
+            <li><a href="#contact" class="scroller" data-offset="-139">Contacto</a></li>
+          </ul>
         </div>
-        <div class="skw-page skw-page-2">
-          <div class="skw-page__half skw-page__half--left">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content">
-                <h2 class="skw-page__heading">Page 2</h2>
-                <p class="skw-page__description">Nothing to do here, continue scrolling.</p>
-              </div>
-            </div>
+        </header>
+        
+        <body>
+        <div class="content">
+          
+          
+          <div class="page" id="page1">
+            <a class="anchor" id="welcome"></a>
+              <div class="title ttl1">Quien soy?</div>
+            <p><strong>Hola.</strong>  Te hablaré un poco sobre mí.</p>
+              <p>Love it. Fork it. Comment it.</p>
+              
+              <p>This is just a little demo of a one page scroller with smooth transitions.  I am using the artic_scroll plugin and its pretty sweet.</p>
+            
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>      
           </div>
-          <div class="skw-page__half skw-page__half--right">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content"></div>
-            </div>
+        
+          <div class="page-divider pgd1"></div>
+            
+          <div class="page" id="page2">
+            <a class="anchor" id="portfolio"></a>
+              <div class="title">Portfolio</div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
           </div>
+        
+          <div class="page-divider pgd2"></div>
+          
+          <div class="page" id="page3">
+            <a class="anchor" id="contact"></a>
+              <div class="title">Contact</div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+          </div>
+          
         </div>
-        <div class="skw-page skw-page-3">
-          <div class="skw-page__half skw-page__half--left">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content"></div>
-            </div>
-          </div>
-          <div class="skw-page__half skw-page__half--right">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content">
-                <h2 class="skw-page__heading">Page 3</h2>
-                <p class="skw-page__description">The end is near, I promise!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skw-page skw-page-4">
-          <div class="skw-page__half skw-page__half--left">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content">
-                <h2 class="skw-page__heading">Page 4</h2>
-                <p class="skw-page__description">Ok, ok, just one more scroll!</p>
-              </div>
-            </div>
-          </div>
-          <div class="skw-page__half skw-page__half--right">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content"></div>
-            </div>
-          </div>
-        </div>
-        <div class="skw-page skw-page-5">
-          <div class="skw-page__half skw-page__half--left">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content"></div>
-            </div>
-          </div>
-          <div class="skw-page__half skw-page__half--right">
-            <div class="skw-page__skewed">
-              <div class="skw-page__content">
-                <h2 class="skw-page__heading">Epic finale</h2>
-                <p class="skw-page__description">
-                  Feel free to check 
-                  <a class="skw-page__link" href="https://codepen.io/suez/pens/public/" target="_blank">my other pens</a> and follow me on 
-                  <a class="skw-page__link" href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </body>
+        
+        <footer>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <br>Thanks.</p>
+        </footer>
 </body>
 </html>

@@ -1,51 +1,32 @@
-$(document).ready(function() {
+(function ($) {
+    $.fn.arctic_scroll = function (options) {
 
-    var curPage = 1;
-    var numOfPages = $(".skw-page").length;
-    var animTime = 1000;
-    var scrolling = false;
-    var pgPrefix = ".skw-page-";
-  
-    function pagination() {
-      scrolling = true;
-  
-      $(pgPrefix + curPage).removeClass("inactive").addClass("active");
-      $(pgPrefix + (curPage - 1)).addClass("inactive");
-      $(pgPrefix + (curPage + 1)).removeClass("active");
-  
-      setTimeout(function() {
-        scrolling = false;
-      }, animTime);
+        var defaults = {
+            elem: $(this),
+            speed: 500
+        };
+        var options = $.extend(defaults, options);
+
+        options.elem.click(function(event){     
+            event.preventDefault();
+            var offset = ($(this).attr('data-offset')) ? $(this).attr('data-offset') : false,
+                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;         
+            if (offset) {
+                var toMove = parseInt(offset);
+                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top + toMove) }, options.speed);
+            } else if (position) {
+                var toMove = parseInt(position);
+                $('html,body').stop(true, false).animate({scrollTop: toMove }, options.speed);
+            } else {
+                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, options.speed);
+            }
+        });
+
     };
-  
-    function navigateUp() {
-      if (curPage === 1) return;
-      curPage--;
-      pagination();
-    };
-  
-    function navigateDown() {
-      if (curPage === numOfPages) return;
-      curPage++;
-      pagination();
-    };
-  
-    $(document).on("mousewheel DOMMouseScroll", function(e) {
-      if (scrolling) return;
-      if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-        navigateUp();
-      } else { 
-        navigateDown();
-      }
+})(jQuery);
+
+$(function(){
+    $(".scroller").arctic_scroll({
+        speed: 600
     });
-  
-    $(document).on("keydown", function(e) {
-      if (scrolling) return;
-      if (e.which === 38) {
-        navigateUp();
-      } else if (e.which === 40) {
-        navigateDown();
-      }
-    });
-  
-  });
+});
