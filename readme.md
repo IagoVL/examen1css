@@ -1,2 +1,3 @@
 # examen 1
 
+que puedo esplicar, es una web simple, lo unico min imamente currado es la cabecera, queria hacer una web de full scroll. auqneu me qude un pelin corto de texto como para hacerlo tal y como lo hice, con mas quedaria mejor tal vez, pero la mayotia que vi usaban una cantidad abusiva de JavaScript y yo queria algo que no usara mucho, algo mas coo esta asi que me decante por usar esat platilla y  editar lo poco que tioene, he usado una gama de color grisacea, aunque ahora creo que la cambiare por un fomdo mas blanco y cambiare el colro de las letras a gris, creo que quedara mejor 
