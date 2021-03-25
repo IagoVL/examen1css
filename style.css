@@ -64,6 +64,10 @@ a {
 .pgd1{
     background-image: url("code2.jpg");
     background-position: center center}
+.pgd2{
+  background-image: url("libros.jpg");
+  background-position: center center}
+
 
 .page {
   min-width: 200px;
