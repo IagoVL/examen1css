@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
 
 body {
-  background: #A1FF9E;
+  background: #b7bbb7;
   font-family: 'Open Sans';
   font-size: 1.3em;
   padding: 0;
@@ -67,15 +67,19 @@ a {
 .pgd2{
   background-image: url("libros.jpg");
   background-position: center center}
+.pgd3{
+  background-image: url("libros.jpg");
+  background-position: center center
+}
 
 
 .page {
   min-width: 200px;
   padding: 50px 100px;
 }
-#page1 {background: LightBlue;}
-#page2 {background: MediumSpringGreen;}
-#page3 {background: SlateGray;}
+#page1 {background: rgb(150, 190, 204);}
+#page2 {background: rgb(128, 156, 165);}
+#page3 {background: rgb(158, 186, 196);}
 
 footer {
   min-height: 200px;
@@ -90,4 +94,7 @@ footer p {
   -o-column-gap: 40px;
   column-count: 2;
   column-gap: 40px;
+}
+p{
+  font-family: 'Ubuntu', sans-serif;
 }
