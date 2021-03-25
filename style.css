@@ -9,10 +9,12 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: rgb(36, 28, 28);
+  font-size: 30px;
 }
 #nav {
   background: url("http://thumb1.shutterstock.com/display_pic_with_logo/1487123/134611310/stock-vector-colorful-geometric-background-with-triangles-vector-eps-134611310.jpg");
+  background-position: center 5cm;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -56,20 +58,20 @@ a {
 .page-divider {
   margin: 0 auto;
   width: 100%;
-  min-height: 500px;
+  min-height: 1000px;
   height: 100%; 
   overflow: hidden;
   background-size: cover;
 }
 .pgd1{
     background-image: url("code2.jpg");
-    background-position: center center}
+    background-position: center center;}
 .pgd2{
   background-image: url("libros.jpg");
-  background-position: center center}
+  background-position: center center;}
 .pgd3{
-  background-image: url("libros.jpg");
-  background-position: center center
+  background-image: url("github.jpg");
+  background-position: center top;
 }
 
 
@@ -77,18 +79,9 @@ a {
   min-width: 200px;
   padding: 50px 100px;
 }
-#page1 {
-  -webkit-transform: translate3d(0, 0, 0);
-  position: relative;
-  border-top: solid 1px #c2c7cc;
-  padding: 6em 0 6em 0;
-  background-image: url("overlay.png"), url("footer.svg");
-  background-size: 128px 128px,				100% 100%;
-}
-
-
-#page2 {background: rgb(128, 156, 165);}
-#page3 {background: rgb(158, 186, 196);}
+#page1 {background: rgb(221, 221, 221);}
+#page2 {background: rgb(169, 172, 173);}
+#page3 {background: rgb(221, 221, 221);}
 
 footer {
   min-height: 200px;
@@ -106,4 +99,8 @@ footer p {
 }
 p{
   font-family: 'Ubuntu', sans-serif;
+  color: rgb(63, 62, 62);
+}
+#git {
+  color: #995dc0;
 }
